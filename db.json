@@ -1,0 +1,30 @@
+{
+  "users": [],
+  "reports": [],
+  "inputs": [
+    {
+      "id": "ab5ebdd3-c073-45a6-8ed2-98c32a0e662d",
+      "input": {
+        "companyName": "poyo tech",
+        "industry": "SaaS",
+        "countryMarket": "nigeria",
+        "monthlyRevenue": "1000",
+        "annualRevenue": "12000",
+        "profitMargin": "30",
+        "burnRate": "100",
+        "monthlyGrowthRate": "50",
+        "customerGrowthRate": "20",
+        "activeUsers": "8000",
+        "businessModel": "SaaS",
+        "revenueStreams": "subscriptions",
+        "teamSize": "10",
+        "founderExperienceLevel": "Expert",
+        "previousExits": "No",
+        "marketSizeTAM": "1000",
+        "competitionLevel": "Low",
+        "scenarioGrowthDelta": "33"
+      },
+      "createdAt": "2026-04-27T22:33:42.788Z"
+    }
+  ]
+}

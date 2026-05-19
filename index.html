@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PoyoX Financials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@500;600&family=Syne:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="top-nav">
+      <div class="brand-wrap">
+        <h1 class="brand">PoyoX Financials</h1>
+        <p class="brand-tagline">Startup valuation predictor</p>
+      </div>
+      <nav class="nav-actions">
+        <button class="ghost-btn" data-nav="landing">Home</button>
+        <button class="ghost-btn" data-nav="form">Valuation Form</button>
+        <button class="ghost-btn" data-nav="dashboard">Saved Reports</button>
+        <button class="cta-btn" data-nav="auth">Sign In</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page active landing" id="landing-page">
+        <div class="landing-scene" aria-hidden="true">
+          <div class="landing-orb landing-orb--1"></div>
+          <div class="landing-orb landing-orb--2"></div>
+          <div class="landing-orb landing-orb--3"></div>
+          <div class="landing-noise"></div>
+          <div class="landing-grid-fade"></div>
+        </div>
+
+        <div class="landing-inner">
+          <div class="landing-hero">
+            <div class="landing-hero__chrome"></div>
+            <div class="landing-hero__content">
+              <div class="landing-badge">
+                <span class="landing-badge__pulse"></span>
+                <span>Neural valuation · live multiples</span>
+              </div>
+
+              <h2 class="landing-title">
+                <span class="landing-title__muted">Signal over noise.</span>
+                <span class="landing-title__gradient">Know your runway value</span>
+                <span class="landing-title__muted">before the term sheet.</span>
+              </h2>
+
+              <p class="landing-lead">
+                PoyoX Financials fuses rule-based multiples, traction signals, and
+                market context into one clear range—built for founders, investors,
+                and analysts who refuse spreadsheet sprawl.
+              </p>
+
+              <div class="landing-pills" role="list">
+                <span class="landing-pill" role="listitem">Pre-seed → Series B</span>
+                <span class="landing-pill" role="listitem">Explainable factors</span>
+                <span class="landing-pill" role="listitem">Sub-second scenarios</span>
+              </div>
+
+              <div class="landing-actions">
+                <button class="landing-cta landing-cta--primary" type="button" data-nav="form">
+                  <span class="landing-cta__shine"></span>
+                  Launch valuation
+                </button>
+                <button class="landing-cta landing-cta--ghost" type="button" data-nav="dashboard">
+                  Saved intelligence
+                </button>
+              </div>
+
+              <blockquote class="landing-quote">
+                <span class="landing-quote__mark" aria-hidden="true">“</span>
+                PoyoX Financials helps founders understand what their startup is
+                worth—instantly, intelligently, and without complexity.
+              </blockquote>
+            </div>
+          </div>
+
+          <aside class="landing-visual" aria-label="Product preview">
+            <div class="landing-hud">
+              <div class="landing-hud__label">Live estimate</div>
+              <div class="landing-hud__value">
+                <span class="landing-hud__currency">$</span>2.4M – 4.1M
+              </div>
+              <div class="landing-hud__meta">
+                <span class="landing-hud__chip">Confidence 87%</span>
+                <span class="landing-hud__chip landing-hud__chip--dim">SaaS · US</span>
+              </div>
+            </div>
+
+            <div class="landing-stack">
+              <article class="landing-card landing-card--glow">
+                <header class="landing-card__head">
+                  <span class="landing-card__dot"></span>
+                  <span>Revenue multiple</span>
+                  <span class="landing-card__tag">×7.2</span>
+                </header>
+                <div class="landing-card__bar">
+                  <div class="landing-card__bar-fill" style="--fill: 72%"></div>
+                </div>
+                <p class="landing-card__hint">Industry-adjusted band vs. growth curve</p>
+              </article>
+
+              <article class="landing-card">
+                <header class="landing-card__head">
+                  <span class="landing-card__dot landing-card__dot--amber"></span>
+                  <span>Growth vector</span>
+                  <span class="landing-card__mono">+18% MoM</span>
+                </header>
+                <div class="landing-spark" aria-hidden="true">
+                  <svg viewBox="0 0 120 40" class="landing-spark__svg" preserveAspectRatio="none">
+                    <defs>
+                      <linearGradient id="sparkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="#8b0000" />
+                        <stop offset="50%" stop-color="#ff1a1a" />
+                        <stop offset="100%" stop-color="#ff6b6b" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      class="landing-spark__path"
+                      d="M0,32 Q20,8 40,24 T80,12 T120,6"
+                      fill="none"
+                      stroke="url(#sparkGrad)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+              </article>
+
+              <article class="landing-card landing-card--compact">
+                <div class="landing-mini-grid">
+                  <div>
+                    <span class="landing-mini__k">Team</span>
+                    <span class="landing-mini__v">+14%</span>
+                  </div>
+                  <div>
+                    <span class="landing-mini__k">Market</span>
+                    <span class="landing-mini__v">−6%</span>
+                  </div>
+                  <div>
+                    <span class="landing-mini__k">Risk</span>
+                    <span class="landing-mini__v mono">Low</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="page" id="auth-page">
+        <div class="auth-card">
+          <h2>Authentication</h2>
+          <p class="muted">
+            Email/password is enabled in MVP. Google sign-in is a prepared
+            optional pathway.
+          </p>
+          <form id="auth-form" class="grid two-col">
+            <label>
+              Email
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              Password
+              <input type="password" name="password" minlength="6" required />
+            </label>
+            <label>
+              Full Name
+              <input type="text" name="fullName" required />
+            </label>
+            <label>
+              User Type
+              <select name="userType" required>
+                <option value="Founder">Founder</option>
+                <option value="Investor">Investor</option>
+                <option value="Analyst">Analyst</option>
+                <option value="Incubator">Incubator</option>
+              </select>
+            </label>
+            <button type="submit" class="cta-btn">Create / Sign In</button>
+            <button type="button" class="ghost-btn" id="google-signin-btn">
+              Google Sign-In (Optional)
+            </button>
+          </form>
+          <p id="auth-status" class="status-text"></p>
+        </div>
+      </section>
+
+      <section class="page" id="form-page">
+        <div class="card">
+          <h2>Startup Input Form</h2>
+          <p class="muted">Complete all fields for best confidence score.</p>
+          <form id="valuation-form">
+            <div class="section-title">Basic Info</div>
+            <div class="grid three-col">
+              <label>Company Name<input name="companyName" required /></label>
+              <label>
+                Industry
+                <select name="industry" required>
+                  <option value="SaaS">SaaS</option>
+                  <option value="Marketplace">Marketplace</option>
+                  <option value="E-commerce">E-commerce</option>
+                  <option value="Service">Service</option>
+                  <option value="Other">Other</option>
+                </select>
+              </label>
+              <div class="country-field">
+                <label class="country-field__label" for="country-market-search">Country / Market</label>
+                <div class="country-combobox" id="country-combobox">
+                  <select
+                    id="country-market-select"
+                    name="countryMarket"
+                    class="country-combobox__native"
+                    required
+                    tabindex="-1"
+                    aria-hidden="true"
+                  >
+                  <option value="" disabled selected>Select country / market</option>
+                  <option value="Afghanistan">Afghanistan</option>
+                  <option value="Albania">Albania</option>
+                  <option value="Algeria">Algeria</option>
+                  <option value="Andorra">Andorra</option>
+                  <option value="Angola">Angola</option>
+                  <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Armenia">Armenia</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Austria">Austria</option>
+                  <option value="Azerbaijan">Azerbaijan</option>
+                  <option value="Bahamas">Bahamas</option>
+                  <option value="Bahrain">Bahrain</option>
+                  <option value="Bangladesh">Bangladesh</option>
+                  <option value="Barbados">Barbados</option>
+                  <option value="Belarus">Belarus</option>
+                  <option value="Belgium">Belgium</option>
+                  <option value="Belize">Belize</option>
+                  <option value="Benin">Benin</option>
+                  <option value="Bhutan">Bhutan</option>
+                  <option value="Bolivia">Bolivia</option>
+                  <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                  <option value="Botswana">Botswana</option>
+                  <option value="Brazil">Brazil</option>
+                  <option value="Brunei">Brunei</option>
+                  <option value="Bulgaria">Bulgaria</option>
+                  <option value="Burkina Faso">Burkina Faso</option>
+                  <option value="Burundi">Burundi</option>
+                  <option value="Cambodia">Cambodia</option>
+                  <option value="Cameroon">Cameroon</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Cape Verde">Cape Verde</option>
+                  <option value="Central African Republic">Central African Republic</option>
+                  <option value="Chad">Chad</option>
+                  <option value="Chile">Chile</option>
+                  <option value="China">China</option>
+                  <option value="Colombia">Colombia</option>
+                  <option value="Comoros">Comoros</option>
+                  <option value="Congo">Congo</option>
+                  <option value="Costa Rica">Costa Rica</option>
+                  <option value="Croatia">Croatia</option>
+                  <option value="Cuba">Cuba</option>
+                  <option value="Cyprus">Cyprus</option>
+                  <option value="Czech Republic">Czech Republic</option>
+                  <option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
+                  <option value="Denmark">Denmark</option>
+                  <option value="Djibouti">Djibouti</option>
+                  <option value="Dominica">Dominica</option>
+                  <option value="Dominican Republic">Dominican Republic</option>
+                  <option value="Ecuador">Ecuador</option>
+                  <option value="Egypt">Egypt</option>
+                  <option value="El Salvador">El Salvador</option>
+                  <option value="Equatorial Guinea">Equatorial Guinea</option>
+                  <option value="Eritrea">Eritrea</option>
+                  <option value="Estonia">Estonia</option>
+                  <option value="Eswatini">Eswatini</option>
+                  <option value="Ethiopia">Ethiopia</option>
+                  <option value="Fiji">Fiji</option>
+                  <option value="Finland">Finland</option>
+                  <option value="France">France</option>
+                  <option value="Gabon">Gabon</option>
+                  <option value="Gambia">Gambia</option>
+                  <option value="Georgia">Georgia</option>
+                  <option value="Germany">Germany</option>
+                  <option value="Ghana">Ghana</option>
+                  <option value="Greece">Greece</option>
+                  <option value="Grenada">Grenada</option>
+                  <option value="Guatemala">Guatemala</option>
+                  <option value="Guinea">Guinea</option>
+                  <option value="Guinea-Bissau">Guinea-Bissau</option>
+                  <option value="Guyana">Guyana</option>
+                  <option value="Haiti">Haiti</option>
+                  <option value="Honduras">Honduras</option>
+                  <option value="Hungary">Hungary</option>
+                  <option value="Iceland">Iceland</option>
+                  <option value="India">India</option>
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="Iran">Iran</option>
+                  <option value="Iraq">Iraq</option>
+                  <option value="Ireland">Ireland</option>
+                  <option value="Israel">Israel</option>
+                  <option value="Italy">Italy</option>
+                  <option value="Ivory Coast">Ivory Coast</option>
+                  <option value="Jamaica">Jamaica</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Jordan">Jordan</option>
+                  <option value="Kazakhstan">Kazakhstan</option>
+                  <option value="Kenya">Kenya</option>
+                  <option value="Kiribati">Kiribati</option>
+                  <option value="Kuwait">Kuwait</option>
+                  <option value="Kyrgyzstan">Kyrgyzstan</option>
+                  <option value="Laos">Laos</option>
+                  <option value="Latvia">Latvia</option>
+                  <option value="Lebanon">Lebanon</option>
+                  <option value="Lesotho">Lesotho</option>
+                  <option value="Liberia">Liberia</option>
+                  <option value="Libya">Libya</option>
+                  <option value="Liechtenstein">Liechtenstein</option>
+                  <option value="Lithuania">Lithuania</option>
+                  <option value="Luxembourg">Luxembourg</option>
+                  <option value="Madagascar">Madagascar</option>
+                  <option value="Malawi">Malawi</option>
+                  <option value="Malaysia">Malaysia</option>
+                  <option value="Maldives">Maldives</option>
+                  <option value="Mali">Mali</option>
+                  <option value="Malta">Malta</option>
+                  <option value="Marshall Islands">Marshall Islands</option>
+                  <option value="Mauritania">Mauritania</option>
+                  <option value="Mauritius">Mauritius</option>
+                  <option value="Mexico">Mexico</option>
+                  <option value="Micronesia">Micronesia</option>
+                  <option value="Moldova">Moldova</option>
+                  <option value="Monaco">Monaco</option>
+                  <option value="Mongolia">Mongolia</option>
+                  <option value="Montenegro">Montenegro</option>
+                  <option value="Morocco">Morocco</option>
+                  <option value="Mozambique">Mozambique</option>
+                  <option value="Myanmar">Myanmar</option>
+                  <option value="Namibia">Namibia</option>
+                  <option value="Nauru">Nauru</option>
+                  <option value="Nepal">Nepal</option>
+                  <option value="Netherlands">Netherlands</option>
+                  <option value="New Zealand">New Zealand</option>
+                  <option value="Nicaragua">Nicaragua</option>
+                  <option value="Niger">Niger</option>
+                  <option value="Nigeria">Nigeria</option>
+                  <option value="North Korea">North Korea</option>
+                  <option value="North Macedonia">North Macedonia</option>
+                  <option value="Norway">Norway</option>
+                  <option value="Oman">Oman</option>
+                  <option value="Pakistan">Pakistan</option>
+                  <option value="Palau">Palau</option>
+                  <option value="Panama">Panama</option>
+                  <option value="Papua New Guinea">Papua New Guinea</option>
+                  <option value="Paraguay">Paraguay</option>
+                  <option value="Peru">Peru</option>
+                  <option value="Philippines">Philippines</option>
+                  <option value="Poland">Poland</option>
+                  <option value="Portugal">Portugal</option>
+                  <option value="Qatar">Qatar</option>
+                  <option value="Romania">Romania</option>
+                  <option value="Russia">Russia</option>
+                  <option value="Rwanda">Rwanda</option>
+                  <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                  <option value="Saint Lucia">Saint Lucia</option>
+                  <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                  <option value="Samoa">Samoa</option>
+                  <option value="San Marino">San Marino</option>
+                  <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                  <option value="Saudi Arabia">Saudi Arabia</option>
+                  <option value="Senegal">Senegal</option>
+                  <option value="Serbia">Serbia</option>
+                  <option value="Seychelles">Seychelles</option>
+                  <option value="Sierra Leone">Sierra Leone</option>
+                  <option value="Singapore">Singapore</option>
+                  <option value="Slovakia">Slovakia</option>
+                  <option value="Slovenia">Slovenia</option>
+                  <option value="Solomon Islands">Solomon Islands</option>
+                  <option value="Somalia">Somalia</option>
+                  <option value="South Africa">South Africa</option>
+                  <option value="South Korea">South Korea</option>
+                  <option value="South Sudan">South Sudan</option>
+                  <option value="Spain">Spain</option>
+                  <option value="Sri Lanka">Sri Lanka</option>
+                  <option value="Sudan">Sudan</option>
+                  <option value="Suriname">Suriname</option>
+                  <option value="Sweden">Sweden</option>
+                  <option value="Switzerland">Switzerland</option>
+                  <option value="Syria">Syria</option>
+                  <option value="Taiwan">Taiwan</option>
+                  <option value="Tajikistan">Tajikistan</option>
+                  <option value="Tanzania">Tanzania</option>
+                  <option value="Thailand">Thailand</option>
+                  <option value="Timor-Leste">Timor-Leste</option>
+                  <option value="Togo">Togo</option>
+                  <option value="Tonga">Tonga</option>
+                  <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                  <option value="Tunisia">Tunisia</option>
+                  <option value="Turkey">Turkey</option>
+                  <option value="Turkmenistan">Turkmenistan</option>
+                  <option value="Tuvalu">Tuvalu</option>
+                  <option value="Uganda">Uganda</option>
+                  <option value="Ukraine">Ukraine</option>
+                  <option value="United Arab Emirates">United Arab Emirates</option>
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="United States">United States</option>
+                  <option value="Uruguay">Uruguay</option>
+                  <option value="Uzbekistan">Uzbekistan</option>
+                  <option value="Vanuatu">Vanuatu</option>
+                  <option value="Vatican City">Vatican City</option>
+                  <option value="Venezuela">Venezuela</option>
+                  <option value="Vietnam">Vietnam</option>
+                  <option value="Yemen">Yemen</option>
+                  <option value="Zambia">Zambia</option>
+                  <option value="Zimbabwe">Zimbabwe</option>
+                  <option value="Global / Multi-region">Global / Multi-region</option>
+                  </select>
+                  <div class="country-combobox__control">
+                    <input
+                      type="text"
+                      id="country-market-search"
+                      class="country-combobox__input"
+                      autocomplete="off"
+                      spellcheck="false"
+                      placeholder="Type to search countries…"
+                      role="combobox"
+                      aria-expanded="false"
+                      aria-controls="country-market-listbox"
+                      aria-autocomplete="list"
+                    />
+                    <button
+                      type="button"
+                      class="country-combobox__toggle"
+                      aria-label="Open or close country list"
+                      tabindex="-1"
+                    ></button>
+                  </div>
+                  <ul id="country-market-listbox" class="country-combobox__list" role="listbox" hidden></ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-title">Financial Metrics</div>
+            <div class="grid four-col">
+              <label>
+                Monthly Revenue (USD)
+                <input type="number" min="0" step="100" name="monthlyRevenue" required />
+              </label>
+              <label>
+                Annual Revenue (USD)
+                <input type="number" min="0" step="100" name="annualRevenue" required />
+              </label>
+              <label>
+                Profit Margin (%)
+                <input type="number" min="-100" max="100" step="0.1" name="profitMargin" required />
+              </label>
+              <label>
+                Burn Rate (USD / month)
+                <input type="number" min="0" step="100" name="burnRate" required />
+              </label>
+            </div>
+
+            <div class="section-title">Growth Metrics</div>
+            <div class="grid three-col">
+              <label>
+                Monthly Growth Rate (%)
+                <input type="number" min="-100" max="1000" step="0.1" name="monthlyGrowthRate" required />
+              </label>
+              <label>
+                Customer Growth Rate (%)
+                <input type="number" min="-100" max="1000" step="0.1" name="customerGrowthRate" required />
+              </label>
+              <label>
+                Active Users
+                <input type="number" min="0" step="1" name="activeUsers" required />
+              </label>
+            </div>
+
+            <div class="section-title">Business Model</div>
+            <div class="grid two-col">
+              <label>
+                Model Type
+                <select name="businessModel" required>
+                  <option value="SaaS">SaaS</option>
+                  <option value="Marketplace">Marketplace</option>
+                  <option value="E-commerce">E-commerce</option>
+                  <option value="Service">Service</option>
+                  <option value="Other">Other</option>
+                </select>
+              </label>
+              <label>
+                Revenue Streams (comma-separated)
+                <input name="revenueStreams" required />
+              </label>
+            </div>
+
+            <div class="section-title">Team & Execution</div>
+            <div class="grid three-col">
+              <label>
+                Team Size
+                <input type="number" min="1" step="1" name="teamSize" required />
+              </label>
+              <label>
+                Founder Experience
+                <select name="founderExperienceLevel" required>
+                  <option value="Beginner">Beginner</option>
+                  <option value="Intermediate">Intermediate</option>
+                  <option value="Expert">Expert</option>
+                </select>
+              </label>
+              <label>
+                Previous Exits
+                <select name="previousExits" required>
+                  <option value="No">No</option>
+                  <option value="Yes">Yes</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="section-title">Market Data</div>
+            <div class="grid three-col">
+              <label>
+                Market Size TAM (USD)
+                <input type="number" min="0" step="1000" name="marketSizeTAM" required />
+              </label>
+              <label>
+                Competition Level
+                <select name="competitionLevel" required>
+                  <option value="Low">Low</option>
+                  <option value="Medium">Medium</option>
+                  <option value="High">High</option>
+                </select>
+              </label>
+              <label>
+                Scenario Growth Adjustment (%)
+                <input type="range" min="-50" max="100" value="0" name="scenarioGrowthDelta" />
+                <span id="scenario-output">0%</span>
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="cta-btn">Predict Valuation</button>
+              <button type="button" class="ghost-btn" id="reset-form">Reset</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="page" id="results-page">
+        <div class="card">
+          <h2>Results Dashboard</h2>
+          <div class="valuation-grid">
+            <div class="metric-card highlight">
+              <p>Estimated Valuation Range</p>
+              <h3 id="valuation-range">$0 - $0</h3>
+            </div>
+            <div class="metric-card">
+              <p>Median Valuation</p>
+              <h3 id="valuation-median">$0</h3>
+            </div>
+            <div class="metric-card">
+              <p>Confidence Score</p>
+              <h3 id="confidence-score">0%</h3>
+            </div>
+          </div>
+          <div class="valuation-grid">
+            <div class="metric-card">
+              <p>Revenue Impact</p>
+              <h3 id="revenue-impact">0%</h3>
+            </div>
+            <div class="metric-card">
+              <p>Growth Impact</p>
+              <h3 id="growth-impact">0%</h3>
+            </div>
+            <div class="metric-card">
+              <p>Market Impact</p>
+              <h3 id="market-impact">0%</h3>
+            </div>
+            <div class="metric-card">
+              <p>Team Impact</p>
+              <h3 id="team-impact">0%</h3>
+            </div>
+          </div>
+          <div class="grid two-col">
+            <div class="card-inner">
+              <h4>Weakness Indicators</h4>
+              <ul id="weakness-list"></ul>
+            </div>
+            <div class="card-inner">
+              <h4>AI Insights & Recommendations</h4>
+              <ul id="ai-insights-list"></ul>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="cta-btn" id="save-report-btn">Save Report</button>
+            <button class="ghost-btn" id="export-pdf-btn">Export as PDF</button>
+            <button class="ghost-btn" id="share-link-btn">Share Link</button>
+            <button class="ghost-btn" data-nav="form">Recalculate</button>
+          </div>
+          <p class="disclaimer">
+            This valuation is an estimate based on provided data and should not
+            be considered financial or investment advice.
+          </p>
+          <p id="result-status" class="status-text"></p>
+        </div>
+      </section>
+
+      <section class="page" id="dashboard-page">
+        <div class="card">
+          <h2>User Dashboard</h2>
+          <p class="muted">Saved reports and valuation history.</p>
+          <div id="reports-list" class="reports-list"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

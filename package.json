@@ -1,0 +1,11 @@
+{
+  "name": "poyox-financials",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI-powered startup valuation predictor",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}
